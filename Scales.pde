@@ -22,9 +22,9 @@ void draw() {
 }
 
 // so i know what im pointing at
-void mouseClicked() {
+/*void mouseClicked() {
   println(mouseX + ", " + mouseY);
-}
+}*/
 
 // scale class
 class Scale {
