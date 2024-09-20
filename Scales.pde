@@ -1,13 +1,13 @@
-int size = 10;
+int totallyNotSize = 10;
 float time = 0;
 ArrayList<Scale> scales = new ArrayList<Scale>();
 
 void setup() {
   size(450, 450);
-  for (int j = 0; j < 450/(size*2); j++) { // change 450 based on screen size
-    for (int i = 0; i < 450/(size*2)+1; i++) { // scuffed +1 for bottom row
-      float distance = dist(0, 0, j*2*size, i*2*size);
-      scales.add(new Scale(j*2*size, i*2*size-size, size, distance));
+  for (int j = 0; j < 450/(totallyNotSize*2); j++) { // change 450 based on screen size
+    for (int i = 0; i < 450/(totallyNotSize*2)+1; i++) { // scuffed +1 for bottom row
+      float distance = dist(0, 0, j*2*totallyNotSize, i*2*totallyNotSize);
+      scales.add(new Scale(j*2*totallyNotSize, i*2*totallyNotSize-totallyNotSize, totallyNotSize, distance));
     }
   }
 }
@@ -29,10 +29,10 @@ void draw() {
 // scale class
 class Scale {
   float x, y, s, d; // x, y, size, distance from 0, 0
-  Scale (float xpos, float ypos, float totallyNotSize, float distance) {
+  Scale (float xpos, float ypos, float totallyNotSizeAgain, float distance) {
     x = xpos;
     y = ypos;
-    s = totallyNotSize;
+    s = totallyNotSizeAgain;
     d = distance;
   }
   void update() {
