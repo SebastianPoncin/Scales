@@ -28,7 +28,7 @@ void draw() {
 
 // scale class
 class Scale {
-  float x, y, s, d; // x, y, size, type, color
+  float x, y, s, d; // x, y, size, distance from 0, 0
   Scale (float xpos, float ypos, float totallyNotSize, float distance) {
     x = xpos;
     y = ypos;
