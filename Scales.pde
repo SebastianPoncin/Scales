@@ -29,10 +29,10 @@ void draw() {
 // scale class
 class Scale {
   float x, y, s, d; // x, y, size, type, color
-  Scale (float xpos, float ypos, float size, float distance) {
+  Scale (float xpos, float ypos, float totallyNotSize, float distance) {
     x = xpos;
     y = ypos;
-    s = size;
+    s = totallyNotSize;
     d = distance;
   }
   void update() {
